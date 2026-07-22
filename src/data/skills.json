@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Python",
+    "level": 75,
+    "category": "Backend & Data"
+  },
+  {
+    "name": "Django",
+    "level": 70,
+    "category": "Backend"
+  },
+  {
+    "name": "Java & Spring Boot",
+    "level": 75,
+    "category": "Backend"
+  },
+  {
+    "name": "JavaScript / TypeScript",
+    "level": 80,
+    "category": "Frontend & Node"
+  },
+  {
+    "name": "React.js / Next.js",
+    "level": 80,
+    "category": "Frontend"
+  },
+  {
+    "name": "Engenharia de IA (LLMs / SKILLS / Prompts)",
+    "level": 75,
+    "category": "AI & Automation"
+  },
+  {
+    "name": "Playwright & QA Automation",
+    "level": 60,
+    "category": "QA & Automation"
+  },
+  {
+    "name": "Redis",
+    "level": 70,
+    "category": "Cache & Database"
+  },
+  {
+    "name": "RabbitMQ",
+    "level": 70,
+    "category": "Messaging"
+  },
+  {
+    "name": "PostgreSQL / MySQL",
+    "level": 80,
+    "category": "Database"
+  },
+  {
+    "name": "Git, GitHub & GitLab",
+    "level": 90,
+    "category": "DevOps & CI/CD"
+  },
+  {
+    "name": "Docker & Containers",
+    "level": 75,
+    "category": "DevOps"
+  },
+  {
+    "name": "HTML5 / CSS3 Moderno",
+    "level": 85,
+    "category": "Frontend"
+  },
+  {
+    "name": "Metodologias Ágeis (SCRUM)",
+    "level": 80,
+    "category": "Management"
+  }
+]

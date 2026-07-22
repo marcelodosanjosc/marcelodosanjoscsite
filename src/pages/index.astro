@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Skills from '../components/Skills.astro';
+import Projects from '../components/Projects.astro';
+import Experience from '../components/Experience.astro';
+import Contact from '../components/Contact.astro';
+import profile from '../data/profile.json';
+---
+
+<BaseLayout>
+  <Navbar />
+  <main>
+    <Hero />
+    <About />
+    <Skills />
+    <Projects />
+    <Experience />
+    <Contact />
+  </main>
+  
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© {new Date().getFullYear()} {profile.name}. Todos os direitos reservados.</p>
+      <p class="footer-subtext">Desenvolvido com Astro SSG para GitHub Pages</p>
+    </div>
+  </footer>
+</BaseLayout>
+
+<style>
+  .footer {
+    padding: 3rem 0;
+    background: #060913;
+    border-top: 1px solid var(--bg-card-border);
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-subtext {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+</style>

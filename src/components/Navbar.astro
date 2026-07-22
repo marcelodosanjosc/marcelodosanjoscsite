@@ -1,0 +1,86 @@
+---
+const navLinks = [
+  { name: "Sobre", href: "#about" },
+  { name: "Habilidades", href: "#skills" },
+  { name: "Portfólio", href: "#projects" },
+  { name: "Experiência", href: "#experience" },
+  { name: "Contato", href: "#contact" },
+];
+---
+
+<header class="navbar-header" id="navbar">
+  <div class="container navbar-container">
+    <a href="#" class="brand">
+      <span class="brand-accent">&lt;</span>Marcelo Caldas<span class="brand-accent">/&gt;</span>
+    </a>
+    
+    <nav class="nav-menu">
+      <ul class="nav-list">
+        {navLinks.map(link => (
+          <li class="nav-item">
+            <a href={link.href} class="nav-link">{link.name}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .navbar-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1.25rem 0;
+    background: rgba(10, 15, 29, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--bg-card-border);
+    transition: var(--transition-normal);
+  }
+
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-main);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+  }
+
+  .brand-accent {
+    color: var(--primary);
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: var(--transition-fast);
+  }
+
+  .nav-link:hover {
+    color: var(--primary);
+  }
+
+  @media (max-width: 768px) {
+    .nav-list {
+      gap: 1rem;
+      font-size: 0.85rem;
+    }
+  }
+</style>

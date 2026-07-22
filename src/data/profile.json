@@ -1,0 +1,20 @@
+{
+  "name": "Marcelo Caldas",
+  "fullName": "Marcelo dos Anjos Caldas",
+  "role": "Desenvolvedor Full-Stack",
+  "bio": "Analista de Sistemas e Desenvolvedor Full-Stack com 5+ anos de experiência em desenvolvimento, suporte e evolução de sistemas. Pós-graduado em Engenharia de Software (Descomplica, 2025) e bacharel em Sistemas de Informação (FAMETRO, 2022). Atuação completa no ciclo de vida do software, com stack em Java, Python, JavaScript/TypeScript, React, Angular, PostgreSQL e MySQL. Atualmente focado em Engenharia de IA aplicada: integração de LLMs, RAG, agentes inteligentes, engenharia de prompts, spec driven development e IA como ferramenta de produtividade no desenvolvimento.",
+  "birthDate": "1990-12-11",
+  "email": "marcelodosanjosc@gmail.com",
+  "phone": "+55 (92) 99203-2567",
+  "languages": ["Português (Nativo)", "Inglês (Básico)"],
+  "avatarUrl": "/img/Foto-perfil-novo.jpeg",
+  "coverUrl": "/img/wallpaper_1366x768_workstation-2.jpg",
+  "cvUrl": "/curriculo/CurriculoNovoDesenvolvedorCfotos.pdf",
+  "socials": [
+    { "platform": "GitHub", "url": "https://github.com/marcelodosanjosc", "icon": "github" },
+    { "platform": "LinkedIn", "url": "https://www.linkedin.com/in/marcelo-caldas-/", "icon": "linkedin" },
+    { "platform": "Instagram", "url": "https://www.instagram.com/marcelo_caldas_/", "icon": "instagram" },
+    { "platform": "Twitter", "url": "https://twitter.com/Marcelo28caldas", "icon": "twitter" },
+    { "platform": "Facebook", "url": "https://www.facebook.com/SrMarceloCaldas", "icon": "facebook" }
+  ]
+}

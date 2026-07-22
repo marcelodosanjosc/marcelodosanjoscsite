@@ -1,0 +1,113 @@
+---
+import experience from '../data/experience.json';
+---
+
+<section class="section" id="experience">
+  <div class="container">
+    <h2 class="section-title">Experiência & Formação</h2>
+
+    <div class="timeline-container">
+      <div class="timeline-group">
+        <h3 class="group-title">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          Atuação Profissional
+        </h3>
+
+        <div class="timeline">
+          {experience.work.map(item => (
+            <div class="glass-panel timeline-item">
+              <span class="timeline-period">{item.period}</span>
+              <h4 class="timeline-role">{item.role}</h4>
+              <span class="timeline-company">{item.company}</span>
+              <p class="timeline-desc">{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="timeline-group">
+        <h3 class="group-title">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          Formação Acadêmica & Técnica
+        </h3>
+
+        <div class="timeline">
+          {experience.education.map(item => (
+            <div class="glass-panel timeline-item">
+              <span class="timeline-period">{item.period}</span>
+              <h4 class="timeline-role">{item.degree}</h4>
+              <span class="timeline-company">{item.institution}</span>
+              <p class="timeline-desc">{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .timeline-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .group-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primary);
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .timeline-item {
+    padding: 1.75rem;
+    position: relative;
+  }
+
+  .timeline-period {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: rgba(59, 130, 246, 0.15);
+    color: var(--primary);
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+
+  .timeline-role {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+
+  .timeline-company {
+    display: block;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+  }
+
+  .timeline-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 868px) {
+    .timeline-container {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

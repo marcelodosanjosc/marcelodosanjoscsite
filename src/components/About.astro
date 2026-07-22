@@ -1,0 +1,115 @@
+---
+import profile from '../data/profile.json';
+
+function calculateAge(birthDateString: string): number {
+  const today = new Date();
+  const birthDate = new Date(birthDateString);
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+  
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age;
+}
+
+const currentAge = calculateAge(profile.birthDate);
+---
+
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="section-title">Sobre Mim</h2>
+    
+    <div class="glass-panel about-grid">
+      <div class="about-bio">
+        <h3>Desenvolvedor Full-Stack</h3>
+        <p>{profile.bio}</p>
+      </div>
+
+      <div class="about-info">
+        <h3>Informações Básicas</h3>
+        <ul class="info-list">
+          <li class="info-item">
+            <span class="info-label">Idade:</span>
+            <span class="info-value">{currentAge} anos</span>
+          </li>
+          <li class="info-item">
+            <span class="info-label">Email:</span>
+            <a href={`mailto:${profile.email}`} class="info-link">{profile.email}</a>
+          </li>
+          <li class="info-item">
+            <span class="info-label">Telefone:</span>
+            <a href={`tel:${profile.phone}`} class="info-link">{profile.phone}</a>
+          </li>
+          <li class="info-item">
+            <span class="info-label">Idiomas:</span>
+            <span class="info-value">{profile.languages.join(", ")}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 3rem;
+  }
+
+  .about-bio h3, .about-info h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    color: var(--primary);
+  }
+
+  .about-bio p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  .info-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .info-item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .info-label {
+    font-weight: 600;
+    color: var(--text-main);
+  }
+
+  .info-value, .info-link {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+
+  .info-link {
+    text-decoration: none;
+    color: var(--primary);
+    transition: var(--transition-fast);
+  }
+
+  .info-link:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 868px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+      padding: 2rem;
+    }
+  }
+</style>

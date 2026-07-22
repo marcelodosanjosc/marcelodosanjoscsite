@@ -1,0 +1,42 @@
+{
+  "work": [
+    {
+      "period": "Atualmente",
+      "role": "Analista de Sistemas",
+      "company": "FPF Tech",
+      "description": "Desenvolvimento e manutenção de sistemas de TI. Atuação no levantamento de requisitos com clientes e usuários finais, validação de protótipos, desenvolvimento de software, criação de casos de testes e aprimoramento contínuo de aplicações corporativas."
+    },
+    {
+      "period": "2020 - 2021",
+      "role": "Estagiário de Suporte & TI",
+      "company": "Centro Universitário Fametro (Unifametro)",
+      "description": "Estágio nas áreas de suporte de informática e administrativo. Atuação em manutenção de hardware, suporte a sistemas e rotinas administrativas."
+    }
+  ],
+  "education": [
+    {
+      "period": "2024 - 2025",
+      "degree": "Pós-graduação em Engenharia de Software",
+      "institution": "Descomplica Faculdade Digital",
+      "description": "Abordagem completa sobre ciclo de vida do desenvolvimento de software, desde a concepção até a entrega e manutenção, garantindo qualidade, confiabilidade, eficiência e escalabilidade."
+    },
+    {
+      "period": "2019 - 2022",
+      "degree": "Bacharelado em Sistemas de Informação",
+      "institution": "Centro Universitário FAMETRO",
+      "description": "Administração e desenvolvimento de sistemas de informação, armazenamento e recuperação de dados, governança de TI e redes de computadores."
+    },
+    {
+      "period": "2014 - 2015",
+      "degree": "Técnico em Informática",
+      "institution": "FUCAPI (Fundação Centro de Análise Pesquisa e Inovação Tecnológica)",
+      "description": "Qualificação técnica em manutenção, redes e fundamentos de desenvolvimento de software."
+    },
+    {
+      "period": "2008 - 2010",
+      "degree": "Ensino Médio Completo",
+      "institution": "Escola Estadual Vasco Vasques",
+      "description": "Formação de ensino médio regulamentar."
+    }
+  ]
+}

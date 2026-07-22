@@ -1,0 +1,57 @@
+[
+  {
+    "id": "ds-delivery",
+    "title": "DS Delivery",
+    "category": "Web",
+    "description": "Plataforma completa de pedidos e entregas web integrada com mapa e localização.",
+    "imageUrl": "/img/Ds-deliver.png",
+    "demoUrl": "https://dsdelivermarcelocaldasdevops.netlify.app/",
+    "githubUrl": "https://github.com/marcelodosanjosc/dsdeliver-sds2",
+    "tags": ["React", "Spring Boot", "Mapbox", "TypeScript"]
+  },
+  {
+    "id": "funcionarios-company-sa",
+    "title": "Funcionários Company SA",
+    "category": "Desktop",
+    "description": "Sistema de gestão de funcionários com cadastro e relatórios em gráficos de pizza e coluna.",
+    "imageUrl": "/img/tela-principal.png",
+    "githubUrl": "https://github.com/marcelodosanjosc/SistemaCadastraFuncionario",
+    "tags": ["Java", "Swing", "MySQL", "JFreeChart"]
+  },
+  {
+    "id": "ecoleta-web",
+    "title": "Ecoleta Web & API",
+    "category": "Web",
+    "description": "Plataforma de conexão entre pontos de coleta de resíduos e entidades recicladoras.",
+    "imageUrl": "/img/ecoleta-web01.png",
+    "githubUrl": "https://github.com/marcelodosanjosc/ecoleta-reactjs-nodejs",
+    "tags": ["React", "Node.js", "TypeScript", "SQLite"]
+  },
+  {
+    "id": "ecoleta-mobile",
+    "title": "Ecoleta Mobile",
+    "category": "Mobile",
+    "description": "Aplicativo mobile para localização geográfica de pontos de coleta de resíduos.",
+    "imageUrl": "/img/ed-mobile.jpeg",
+    "githubUrl": "https://github.com/marcelodosanjosc/ecoleta-reactjs-nodejs",
+    "tags": ["React Native", "Expo", "TypeScript"]
+  },
+  {
+    "id": "be-the-hero-web",
+    "title": "Be The Hero Web",
+    "category": "Web",
+    "description": "Aplicação web que conecta ONGs a pessoas dispostas a ajudar financeiramente em casos cadastrados.",
+    "imageUrl": "/img/be-the-hero-web.png",
+    "githubUrl": "https://github.com/marcelodosanjosc/be-the-hero",
+    "tags": ["React", "Node.js", "Express"]
+  },
+  {
+    "id": "be-the-hero-mobile",
+    "title": "Be The Hero Mobile",
+    "category": "Mobile",
+    "description": "App mobile para navegação em casos de ONGs e contato direto via WhatsApp/E-mail.",
+    "imageUrl": "/img/be-the-hero-mobile.jpeg",
+    "githubUrl": "https://github.com/marcelodosanjosc/be-the-hero",
+    "tags": ["React Native", "Expo"]
+  }
+]

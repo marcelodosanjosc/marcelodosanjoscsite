@@ -10,6 +10,10 @@ const {
   title = "Marcelo Caldas | Desenvolvedor Full-Stack & Analista de Sistemas",
   description = "Portfólio profissional de Marcelo Caldas - Bacharel em Sistemas de Informação, Desenvolvedor Full-Stack e Analista de Sistemas."
 } = Astro.props;
+
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const faviconUrl = `${base}favicon.ico`;
+const ogImageUrl = `https://marcelocaldasdevops.com/img/Foto-perfil-novo.jpeg`;
 ---
 
 <!DOCTYPE html>
@@ -17,7 +21,7 @@ const {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href={faviconUrl} />
     
     <!-- Primary Meta Tags -->
     <title>{title}</title>
@@ -30,14 +34,14 @@ const {
     <meta property="og:url" content="https://marcelocaldasdevops.com/" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="https://marcelocaldasdevops.com/img/Foto-perfil-novo.jpeg" />
+    <meta property="og:image" content={ogImageUrl} />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://marcelocaldasdevops.com/" />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content="https://marcelocaldasdevops.com/img/Foto-perfil-novo.jpeg" />
+    <meta property="twitter:image" content={ogImageUrl} />
 
     <!-- GA4 Tag -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>

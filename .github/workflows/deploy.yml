@@ -25,22 +25,20 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
-          cache-dependency-path: './marcelodosanjoscsite/package-lock.json'
+          cache-dependency-path: 'package-lock.json'
 
       - name: Install dependencies
-        working-directory: ./marcelodosanjoscsite
         run: npm ci
 
       - name: Build Astro site
-        working-directory: ./marcelodosanjoscsite
         run: npm run build
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./marcelodosanjoscsite/dist
+          path: ./dist
 
   deploy:
     name: Deploy to GitHub Pages
